@@ -9,7 +9,7 @@ This repository is dedicated to **real science only**. We focus on real mathemat
 We are independent mathematicians and physics learners. Our goal is to:
 - Learn new physics concepts together
 - Teach what we try to understand
-- Move ahead with earth physics
+- Advance our understanding of terrestrial physics
 - Discover better ways to approach physics problems
 
 **No fiction. No metaphors. No embellishing.**

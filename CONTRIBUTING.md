@@ -84,7 +84,9 @@ All contributions are reviewed by the community. During review:
 
 ## Questions?
 
-Remember: asking questions is part of learning. If you're unsure about whether your contribution fits our guidelines, open an issue for discussion before submitting.
+Remember: asking questions is part of learning. If you're unsure about whether your contribution fits our guidelines:
+- Open an issue labeled "question" for discussion before submitting
+- For preliminary discussions, you may also reach out to project maintainers directly
 
 ---
 
