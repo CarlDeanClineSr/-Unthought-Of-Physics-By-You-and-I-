@@ -34,8 +34,12 @@ class DataLogger:
         self.plots_dir = self.base_path / "plots"
         self.snapshots_dir = self.base_path / "snapshots"
         
-        for directory in [self.logs_dir, self.diagnostics_dir, 
-                         self.plots_dir, self.snapshots_dir]:
+        for directory in [
+            self.logs_dir,
+            self.diagnostics_dir,
+            self.plots_dir,
+            self.snapshots_dir
+        ]:
             directory.mkdir(parents=True, exist_ok=True)
         
         # Initialize log file

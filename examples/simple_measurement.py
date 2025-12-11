@@ -6,7 +6,8 @@ import sys
 import time
 from pathlib import Path
 
-# Add src to path
+# Add src to path for standalone example execution
+# In production, install the package properly or use relative imports
 sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
 
 from data_logger import DataLogger

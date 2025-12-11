@@ -86,10 +86,15 @@ class ExperimentRunner:
     
     def _finalize(self):
         """Generate final diagnostic report and close."""
+        total_attempts = self.iteration_count + self.error_count
+        success_rate = "N/A"
+        if total_attempts > 0:
+            success_rate = f"{(self.iteration_count / total_attempts * 100):.2f}%"
+        
         metrics = {
             "total_iterations": self.iteration_count,
             "errors": self.error_count,
-            "success_rate": f"{(self.iteration_count / (self.iteration_count + self.error_count) * 100):.2f}%" if (self.iteration_count + self.error_count) > 0 else "N/A"
+            "success_rate": success_rate
         }
         
         self.logger.generate_diagnostic_report(metrics)
