@@ -1,0 +1,39 @@
+{
+  "capsule_type": "CLUFT_DEVIATION",
+  "event_timestamp": "2025-12-10T22:19:00.000Z",
+  "detection_criteria": {
+    "type": "PARTIAL_MATCH",
+    "description": "Elevated density with strong Bz but no coincident flare",
+    "test_condition": "CLUFT residual observation without X-ray correlation"
+  },
+  "observed_parameters": {
+    "timestamp": "2025-12-10 22:19:00.000",
+    "xray_flux": 0.1207,
+    "goes_class_proxy": 1.8762,
+    "event_phase": "peak",
+    "proton_density_cm3": 13.57,
+    "solar_wind_speed_kms": 437.7,
+    "bz_component_nT": -15.2,
+    "temperature_K": 37.01,
+    "source": "ACE/DSCOVR"
+  },
+  "cluft_analysis": {
+    "density_status": "MODERATE (13.57 cm⁻³ below HIGH_IMPACT threshold)",
+    "bz_status": "EXTREME (-15.2 nT exceeds HIGH_IMPACT threshold)",
+    "flare_correlation": "NO_FLARE (X-ray proxy 1.8762 below significance)",
+    "residual_observation": "Strong Bz deviation without corresponding flare signature",
+    "hypothesis_test": "Observing curl residual (Δ) alignment with lattice correction C_luft = μ₀ α × n̂"
+  },
+  "research_context": {
+    "question": "When strong Bz exists without flare coincidence, does the observed magnetic field structure show residual alignment?",
+    "significance": "Tests whether CLUFT correction predictions hold for solar wind-only conditions",
+    "next_step": "Compare measured field structure with predicted lattice correction vector"
+  },
+  "verification": {
+    "data_source": "raw_csv/cme_heartbeat_log_2025_12.csv",
+    "intake_version": "v0.7.0",
+    "capsule_created": "2025-12-11T22:42:00.000Z",
+    "verified_by": "LUFT Data Intake System"
+  },
+  "notes": "This event demonstrates the CLUFT_DEVIATION detection mode: strong magnetic field structure without flare component. Provides test case for lattice correction hypothesis in solar wind regime."
+}
