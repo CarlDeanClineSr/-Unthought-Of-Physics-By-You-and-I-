@@ -1,0 +1,39 @@
+# Generated data files - experiments produce these
+data/logs/*.log
+data/diagnostics/*.log
+data/diagnostics/*.txt
+data/diagnostics/*.json
+data/plots/*
+data/snapshots/*.json
+
+# Keep directory structure
+!data/logs/.gitkeep
+!data/diagnostics/.gitkeep
+!data/plots/.gitkeep
+!data/snapshots/.gitkeep
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
