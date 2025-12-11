@@ -45,3 +45,8 @@ Thumbs.db
 
 # Processing temp directory
 /tmp/luft_processing/
+
+# Generated capsules and summaries (exclude timestamped generated files)
+capsules/capsule_audit_v*.md
+capsules/audit_log_*.md
+summaries/manifest_*.json
