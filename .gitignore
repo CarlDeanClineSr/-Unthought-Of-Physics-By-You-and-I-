@@ -44,3 +44,77 @@ ENV/
 # Research and calculation drafts (keep only finalized work in repo)
 drafts/
 scratch/
+# Generated data files - experiments produce these
+data/logs/*.log
+data/diagnostics/*.log
+data/diagnostics/*.txt
+data/diagnostics/*.json
+data/plots/*
+data/snapshots/*.json
+
+# Keep directory structure
+!data/logs/.gitkeep
+!data/diagnostics/.gitkeep
+!data/plots/.gitkeep
+!data/snapshots/.gitkeep
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+venv/
+env/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+/tmp/
+*.tmp
+*.bak
+*.log
+
+# Processing temp directory
+/tmp/luft_processing/
+
+# Generated capsules and summaries (exclude timestamped generated files)
+capsules/capsule_audit_v*.md
+capsules/audit_log_*.md
+summaries/manifest_*.json

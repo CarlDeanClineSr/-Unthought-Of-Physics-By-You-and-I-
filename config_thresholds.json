@@ -1,0 +1,54 @@
+{
+  "version": "0.7.0",
+  "description": "LUFT Data Intake System Configuration Thresholds",
+  "last_updated": "2025-12-11",
+  "thresholds": {
+    "data_quality": {
+      "min_completeness": 0.95,
+      "max_missing_values": 0.05,
+      "min_sample_size": 100,
+      "max_outlier_ratio": 0.02
+    },
+    "validation": {
+      "numeric_range_check": true,
+      "categorical_validation": true,
+      "temporal_consistency": true,
+      "duplicate_detection": true
+    },
+    "processing": {
+      "batch_size": 1000,
+      "max_memory_mb": 4096,
+      "parallel_threads": 4,
+      "chunk_size": 500
+    },
+    "lattice_parameters": {
+      "min_lattice_constant": 0.1,
+      "max_lattice_constant": 100.0,
+      "energy_threshold": 1e-6,
+      "precision": 1e-10
+    },
+    "radio_frequency": {
+      "min_frequency_hz": 1e6,
+      "max_frequency_hz": 1e12,
+      "sample_rate_hz": 1e9,
+      "bandwidth_hz": 1e8
+    },
+    "audit": {
+      "enable_logging": true,
+      "log_level": "INFO",
+      "capsule_generation": true,
+      "manifest_required": true
+    }
+  },
+  "file_paths": {
+    "raw_data": "raw_csv/",
+    "processed_data": "summaries/",
+    "audit_logs": "capsules/",
+    "temp_directory": "/tmp/luft_processing/"
+  },
+  "alert_thresholds": {
+    "critical_errors": 0,
+    "warnings": 10,
+    "info_messages": 1000
+  }
+}
