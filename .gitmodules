@@ -1,0 +1,8 @@
+[submodule "integration/intake-vault"]
+	path = integration/intake-vault
+	url = https://github.com/CarlDeanClineSr/LUFT-Intake-Vault.git
+	branch = main
+[submodule "integration/lattice-audit"]
+	path = integration/lattice-audit
+	url = https://github.com/CarlDeanClineSr/LUFT-Lattice-Audit.git
+	branch = main
