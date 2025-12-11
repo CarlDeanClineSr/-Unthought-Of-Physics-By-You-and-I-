@@ -59,16 +59,6 @@ Each entry follows this structure:
 
 ## Pending Integrations
 
-### Submodule: intake-vault
-- **Status:** Awaiting first [Verified] merge
-- **Expected Version:** v1.0.0 or later
-- **Prerequisites:** Repository must exist in LUFT-PORTAL namespace
-
-### Submodule: lattice-audit
-- **Status:** Awaiting first [Verified] merge
-- **Expected Version:** v1.0.0 or later
-- **Prerequisites:** Repository must exist in LUFT-PORTAL namespace
-
 ### Submodule: analysis-rail
 - **Status:** Awaiting first [Verified] merge
 - **Expected Version:** v1.0.0 or later
@@ -76,9 +66,41 @@ Each entry follows this structure:
 
 ---
 
-### 2025-12-11 20:00 UTC – Initial Integration
-- Submodule: integration/intake-vault
-- Source Commit: 
+### [2025-12-11 20:00:00 UTC] SUBMODULE_ADDED: intake-vault initial integration
+
+**Actor:** Repository Maintainer
+**Submodule:** integration/intake-vault
+**Source Commit:** 410d88ddf784bd388b4bbf76750cbac0e9e5bf16
+**Target Commit:** 6b25a866583e682fb5dc19c18f7021092df8bd80
+**Verification Status:** [Verified]
+**Justification:** First integration of LUFT-Intake-Vault workshop repository into public ledger. Submodule points to verified baseline state from LUFT-PORTAL namespace.
+
+**Changes:**
+- Added submodule integration/intake-vault
+- Repository URL: https://github.com/CarlDeanClineSr/LUFT-Intake-Vault.git
+- Branch: main
+- Initial commit integrated
+
+**Witness Chain:** References Entry #0001 (VAULT_CREATED)
+
+---
+
+### [2025-12-11 20:00:00 UTC] SUBMODULE_ADDED: lattice-audit initial integration
+
+**Actor:** Repository Maintainer
+**Submodule:** integration/lattice-audit
+**Source Commit:** 2422273f08d5b066c6f55a7ea98098d4625dec9d
+**Target Commit:** 6b25a866583e682fb5dc19c18f7021092df8bd80
+**Verification Status:** [Verified]
+**Justification:** First integration of LUFT-Lattice-Audit workshop repository into public ledger. Submodule points to verified baseline state from LUFT-PORTAL namespace.
+
+**Changes:**
+- Added submodule integration/lattice-audit
+- Repository URL: https://github.com/CarlDeanClineSr/LUFT-Lattice-Audit.git
+- Branch: main
+- Initial commit integrated
+
+**Witness Chain:** References Entry #0001 (VAULT_CREATED)
 
 ---
 
@@ -110,10 +132,10 @@ When integrating LUFT-PORTAL updates:
 
 ## Witness Log Statistics
 
-- **Total Entries:** 2
-- **[Verified] Integrations:** 0
+- **Total Entries:** 3
+- **[Verified] Integrations:** 2
 - **[Derived] Integrations:** 0
-- **Submodules Active:** 0 (3 pending)
+- **Submodules Active:** 2 (1 pending)
 - **Last Updated:** 2025-12-11T20:00:00Z
 
 ---
