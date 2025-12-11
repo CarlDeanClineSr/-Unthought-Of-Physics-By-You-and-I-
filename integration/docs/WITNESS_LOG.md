@@ -76,6 +76,12 @@ Each entry follows this structure:
 
 ---
 
+### 2025-12-11 20:00 UTC – Initial Integration
+- Submodule: integration/intake-vault
+- Source Commit: 
+
+---
+
 ## Instructions for Future Entries
 
 When integrating LUFT-PORTAL updates:
