@@ -1,0 +1,7 @@
+timestamp_utc,xray_flux_wm2,goes_proxy,event_phase,proton_density_cm3,solar_wind_velocity_kms,bz_component_nT,temperature_kK,source,event_type,capsule_generated,high_impact_trigger,cluft_deviation_trigger,density_status,bz_status
+2025-12-10 18:21:00,0.0764,4.0579,pre,4.43,394.2,-3.35,112.52,ACE/DSCOVR,Quiet,None,FALSE,FALSE,Nominal,Weak
+2025-12-10 19:19:00,0.1126,0.3054,pre,8.1,381.8,0.25,291.05,ACE/DSCOVR,Pre-shock,None,FALSE,FALSE,Elevated,Northward
+2025-12-10 20:21:00,0.1088,3.0107,peak,1.88,409.0,-14.41,333.5,ACE/DSCOVR,Shock_arrival,None,FALSE,TRUE,Low,Severe
+2025-12-10 21:19:00,0.1226,5.5414,peak,16.49,442.3,-14.35,28.1,ACE/DSCOVR,HIGH_IMPACT,HIGH_IMPACT,TRUE,FALSE,Critical,Severe
+2025-12-10 22:19:00,0.1207,1.8762,peak,13.57,437.7,-15.2,37.01,ACE/DSCOVR,CLUFT_DEVIATION,CLUFT_DEVIATION,FALSE,TRUE,Moderate,Extreme
+2025-12-11 19:19:00,0.1099,0.3054,pre,7.62,411.8,1.72,297.71,ACE/DSCOVR,Recovery,None,FALSE,FALSE,Nominal,Northward
