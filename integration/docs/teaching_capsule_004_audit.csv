@@ -1,0 +1,8 @@
+Component,Description,Status,Evidence/Reference,Notes
+Starlink TLE,"Orbital drag perturbations",[Verified],starlink_44714_*.csv,"Drag perturbations consistent with density variations"
+MW Fusion SST,"Global SST anomaly",[Verified],mw.fusion.2025.118.v05.1.gz,"Pacific warm pool anomaly dominant"
+DMSP F18 SSJ,"Auroral plasma flux",[Verified],f18_202505*.gz,"Precipitation above threshold"
+RSS SMAP Wind,"Daily wind speed anomaly",[Verified],RSS_smap_wind_daily_*.nc,"Equatorial wind anomaly"
+Multi-Domain Coincidence,"Simultaneous extreme event",[Null],No overlap in thresholds,"Quiet period baseline"
+Lattice Multi-Domain Signal,"Correlation across domains",[Pending],Cross with solar wind archive,"Pearson r > 0.6 required for [Verified]"
+Provenance,"File hashing + repo location",[Verified],"raw_data/ directory","Ledger anchored"
