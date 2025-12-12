@@ -1,0 +1,2 @@
+timestamp_utc,recording_duration_sec,center_frequency_khz,sample_rate_hz,max_amplitude,rms_amplitude,peak_to_rms_ratio,total_energy,peak_time_sec,dominant_frequency_hz,data_type,superbolt_detected,detection_confidence,amplitude_status,energy_classification,capsule_generated,threshold_peak_to_rms,threshold_amplitude,threshold_met_superbolt,threshold_met_extreme_amp,threshold_met_high_energy
+2025-07-24 02:06:42,60.0,1468.0,48000,0.901051,0.050618,17.80,7378.953,30.000,20001.67,SYNTHETIC_TEST,TRUE,HIGH,EXTREME,HIGH,RADIO_IMPACT,10.0,0.7,TRUE,TRUE,TRUE
