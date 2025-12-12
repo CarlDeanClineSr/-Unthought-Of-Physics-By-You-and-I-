@@ -1,0 +1,39 @@
+{
+  "capsule_type": "RADIO_IMPACT",
+  "event_timestamp": "2025-07-24T02:06:42.000Z",
+  "detection_criteria": {
+    "peak_to_rms_threshold": "\u2265 10.0",
+    "frequency_range": "VLF/LF (3-300 kHz)",
+    "impact_level": "SUPERBOLT"
+  },
+  "observed_parameters": {
+    "source_file": "HDSDR_20250724_020642Z_1468kHz_RF.wav",
+    "recording_timestamp": "2025-07-24 02:06:42.000",
+    "center_frequency_khz": 1468.0,
+    "sample_rate_hz": 48000,
+    "duration_sec": 60,
+    "data_type": "SYNTHETIC_TEST"
+  },
+  "computed_metrics": {
+    "max_amplitude": 0.901051,
+    "rms_amplitude": 0.050618,
+    "peak_to_rms_ratio": 17.8,
+    "total_energy": 7378.953,
+    "peak_time_sec": 30.0,
+    "dominant_frequency_hz": 20001.67
+  },
+  "impact_assessment": {
+    "superbolt_detected": true,
+    "detection_confidence": "HIGH",
+    "amplitude_status": "EXTREME",
+    "energy_classification": "HIGH"
+  },
+  "verification": {
+    "data_source": "raw_radio/HDSDR_20250724_020642Z_1468kHz_RF.wav",
+    "processing_script": "radio_intake_test.py v0.1.0",
+    "capsule_created": "2025-12-12T00:38:18.000Z",
+    "verified_by": "LUFT Radio Intake System",
+    "data_authenticity": "SYNTHETIC_TEST"
+  },
+  "notes": "Superbolt event detected via VLF/LF radio signature. Peak-to-RMS ratio indicates extremely high energy lightning discharge."
+}
