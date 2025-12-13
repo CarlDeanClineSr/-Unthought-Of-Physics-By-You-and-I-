@@ -55,3 +55,8 @@ with open("capsules/auto_cern_bridge_001.md", "w") as f:
 print("CERN Bridge Test complete!")
 print(f"Max normalized amplitude: {max_chi:.6f}")
 print("Plot saved + capsule written to capsules/auto_cern_bridge_001.md")
+
+# --- Alerting logic added ---
+if abs(max_chi - 0.15) < 0.05:
+    print("ALERT: Potential χ ceiling echo detected in CERN data!")
+    # Future: webhook, email, or auto-tweet
