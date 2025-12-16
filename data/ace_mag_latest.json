@@ -1,0 +1,19 @@
+{
+  "metadata": {
+    "source": "DUMMY_DATA",
+    "instrument": "ACE_MAG",
+    "generated": "2025-12-16T22:31:58.340438Z",
+    "note": "This is synthetic test data - real ACE data not available"
+  },
+  "observations": [
+    {
+      "timestamp": "2025-12-16T22:31:58.340438Z",
+      "bx_gsm": 0.0,
+      "by_gsm": 0.0,
+      "bz_gsm": 0.0,
+      "bt": 5.0,
+      "quality_flag": "SYNTHETIC"
+    }
+  ],
+  "status": "DUMMY_MODE"
+}
