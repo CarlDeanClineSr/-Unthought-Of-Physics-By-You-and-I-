@@ -27,6 +27,9 @@ ACE_MAG_FILE = "ace_mag_latest.json"
 # CME Heartbeat CSV file
 CME_HEARTBEAT_CSV = "raw_csv/cme_heartbeat_log_2025_12.csv"
 
+# CSV format constants
+EXPECTED_CSV_COLUMNS = 9
+
 
 def setup_logging(log_dir: str = "data/logs") -> Path:
     """
@@ -84,7 +87,7 @@ def generate_dummy_ace_plasma_data() -> Dict[str, Any]:
     Returns:
         Dictionary with dummy plasma data
     """
-    now = datetime.now().replace(tzinfo=None)
+    now = datetime.now()
     return {
         "metadata": {
             "source": "DUMMY_DATA",
@@ -113,7 +116,7 @@ def generate_dummy_ace_mag_data() -> Dict[str, Any]:
     Returns:
         Dictionary with dummy magnetic field data
     """
-    now = datetime.now().replace(tzinfo=None)
+    now = datetime.now()
     return {
         "metadata": {
             "source": "DUMMY_DATA",
@@ -306,7 +309,7 @@ def load_csv_file(filepath: Path, log_file: Optional[Path] = None) -> Tuple[Opti
             # CSV has no header, define column names
             reader = csv.reader(f)
             for row in reader:
-                if len(row) >= 9:  # Ensure row has enough columns
+                if len(row) >= EXPECTED_CSV_COLUMNS:  # Ensure row has enough columns
                     data.append({
                         'timestamp_utc': row[0],
                         'chi_amplitude': float(row[1]),
@@ -320,7 +323,7 @@ def load_csv_file(filepath: Path, log_file: Optional[Path] = None) -> Tuple[Opti
                     })
         
         if not data:
-            error_msg = f"Could not extract any valid data from input files: {filepath}"
+            error_msg = f"Could not extract any valid data from file: {filepath}"
             log_message(error_msg, log_file, "ERROR")
             return None, error_msg
         
@@ -398,7 +401,7 @@ def process_ace_data(plasma_data: Dict[str, Any],
     """
     log_message("Processing ACE data...", log_file, "INFO")
     
-    now = datetime.now().replace(tzinfo=None)
+    now = datetime.now()
     result = {
         "timestamp": now.isoformat() + "Z",
         "plasma_status": plasma_data.get("status", "UNKNOWN"),
@@ -501,7 +504,7 @@ def analyze_cme_heartbeat(csv_data: List[Dict[str, Any]], log_file: Optional[Pat
 def main():
     """
     Main entry point for LUFT CME Heartbeat Logger.
-    Handles all error scenarios gracefully and never crashes unexplained.
+    Handles all error scenarios gracefully and never crashes unexpectedly.
     """
     print("=" * 80)
     print(f"LUFT CME Heartbeat Logger v{__version__}")
@@ -570,7 +573,7 @@ def main():
     # Validate data
     log_message("Validating ACE data...", log_file, "INFO")
     if not validate_ace_data(plasma_data, mag_data, log_file):
-        log_message("Could not extract any valid data from input files", log_file, "ERROR")
+        log_message("Data validation failed - cannot proceed with invalid data structures", log_file, "ERROR")
         print("\n" + "=" * 80)
         print("ERROR SUMMARY:")
         print("=" * 80)
