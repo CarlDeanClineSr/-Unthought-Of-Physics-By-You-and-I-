@@ -31,6 +31,18 @@ This is a unique learning environment where the distinction between student and 
 - Share discoveries grounded in scientific method
 - Apply approved mathematical frameworks to physics problems
 
+## How This Repository Works (Living Experiment Ledger)
+
+- **Raw data first**: CSV/JSON captures live in `raw_csv/` and `raw_radio/` as witness records.
+- **Audit trails**: Capsule logs in `capsules/` document what happened, when, and with which thresholds.
+- **Reproducibility scripts**: Python helpers (for example `reproduce_chi_ceiling_plot.py`) make plots and checks repeatable.
+- **Open ledger**: Everything is versioned in Git so math and methods can be corrected when data demands it.
+
+### Example: χ-ceiling data that forces a formula check
+1. Install the plotting deps if needed: `pip install pandas matplotlib`.
+2. Run `python reproduce_chi_ceiling_plot.py` (uses `raw_csv/cme_heartbeat_log_2025_12.csv`).
+3. The plot highlights χ amplitudes hitting the 0.15 ceiling during storm phases—an explicit spot where the math needs scrutiny and updates.
+
 ## What We Don't Do
 
 - Create or promote speculative fiction
