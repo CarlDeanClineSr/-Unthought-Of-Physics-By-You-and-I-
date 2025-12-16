@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Load the CSV and ensure correct time sequence
-df = pd.read_csv("cme_heartbeat_log_2025_12.csv", parse_dates=["timestamp_utc"])
+df = pd.read_csv("raw_csv/cme_heartbeat_log_2025_12.csv", parse_dates=["timestamp_utc"])
 df = df.sort_values("timestamp_utc")
 
 fig, ax = plt.subplots(4, 1, figsize=(12, 10), sharex=True)
