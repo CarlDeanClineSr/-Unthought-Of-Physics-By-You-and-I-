@@ -146,7 +146,7 @@ def generate_dummy_cme_heartbeat_data() -> List[List[str]]:
     Returns:
         List of CSV rows
     """
-    now = datetime.now().replace(tzinfo=None)
+    now = datetime.now()
     # CSV format: timestamp_utc, chi_amplitude, density_p_cm3, phase, temperature_kK, speed_km_s, bz_nT, bt_nT, source
     rows = [
         [now.strftime('%Y-%m-%d %H:%M:%S'), "0.1500", "2.50", "quiet", "100.0", "400.0", "-2.0", "5.0", "DUMMY"],
