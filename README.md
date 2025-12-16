@@ -33,7 +33,7 @@ This is a unique learning environment where the distinction between student and 
 
 ## How This Repository Works (Living Experiment Ledger)
 
-- **Raw data first**: CSV/JSON captures live in `raw_csv/` and `raw_radio/` as witness records.
+- **Raw data first**: CSV/JSON captures live in `raw_csv/` and `raw_radio/` as witness records from continuously updating satellite feeds.
 - **Audit trails**: Capsule logs in `capsules/` document what happened, when, and with which thresholds.
 - **Reproducibility scripts**: Python helpers (for example `reproduce_chi_ceiling_plot.py`) make plots and checks repeatable.
 - **Open ledger**: Everything is versioned in Git so math and methods can be corrected when data demands it.
