@@ -46,11 +46,17 @@ drafts/
 scratch/
 # Generated data files - experiments produce these
 data/logs/*.log
+data/logs/processed_results_*.json
+data/logs/heartbeat_logger_*.log
 data/diagnostics/*.log
 data/diagnostics/*.txt
 data/diagnostics/*.json
 data/plots/*
 data/snapshots/*.json
+# Generated dummy/test data files
+data/ace_plasma_latest.json
+data/ace_mag_latest.json
+raw_csv/cme_heartbeat_log_*.csv
 
 # Keep directory structure
 !data/logs/.gitkeep
